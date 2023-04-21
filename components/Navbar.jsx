@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Box, Typography } from "@mui/material";
 
+
 const Navbar = () => {
   const [active, setActive] = useState(false);
   const [open, setOpen] = useState(false);
@@ -27,10 +28,11 @@ const Navbar = () => {
       bgcolor="#212121"
       justifyContent="space-between"
     >
+
       <Typography fontSize={25} fontWeight={700} color="white">
         BUILDABOD
       </Typography>
-      <Box display="flex" alignItems="center" paddingRight={100}>
+      <Box display="flex" alignItems="center">
         <Typography fontSize={18} color="white">
           Item 1
         </Typography>
@@ -40,6 +42,9 @@ const Navbar = () => {
         <Typography fontSize={18} color="white" ml={3}>
           Item 3
         </Typography>
+      </Box>
+      <Box>
+
       </Box>
     </Box>
   );
