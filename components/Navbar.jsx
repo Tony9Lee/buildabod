@@ -24,7 +24,8 @@ const Navbar = () => {
       position="fixed"
       top={0}
       width="100%"
-      px={20}
+      height={47}
+      px={40}
       bgcolor="#212121"
       justifyContent="space-between"
     >
@@ -32,7 +33,7 @@ const Navbar = () => {
       <Typography fontSize={25} fontWeight={700} color="white">
         BUILDABOD
       </Typography>
-      <Box display="flex" alignItems="center">
+      <Box display="flex" alignItems="center" ml={-65}>
         <Typography fontSize={18} color="white">
           Item 1
         </Typography>
