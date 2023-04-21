@@ -18,6 +18,8 @@ const Navbar = () => {
     };
   }, []);
 
+
+
   return (
     <Box
       display="flex"
@@ -33,15 +35,21 @@ const Navbar = () => {
       <Typography fontSize={25} fontWeight={700} color="white">
         BUILDABOD
       </Typography>
-      <Box display="flex" alignItems="center" ml={-65}>
+      <Box display="flex" alignItems="center" ml={-55}>
         <Typography fontSize={18} color="white">
-          Item 1
+          WORKOUTS
         </Typography>
         <Typography fontSize={18} color="white" ml={3}>
-          Item 2
+          MEAL PLAN
         </Typography>
         <Typography fontSize={18} color="white" ml={3}>
-          Item 3
+          ABOUT
+        </Typography>
+        <Typography fontSize={18} color="white" ml={3}>
+          STORE
+        </Typography>
+        <Typography fontSize={18} color="white" ml={3}>
+          LOGIN
         </Typography>
       </Box>
       <Box>
