@@ -11,10 +11,10 @@ import {
   InputLabel,
 } from "@mui/material";
 
-    const handleSubmit = (event) => {
-      event.preventDefault();
-      // Handle registration logic here
-    };
+const handleSubmit = (event) => {
+  event.preventDefault();
+  // Handle registration logic here
+};
 
 const Featured = () => {
   return (
@@ -31,19 +31,19 @@ const Featured = () => {
       </Stack>
       <Box sx={{ paddingTop: "150px", width: "100%" }}>
         <Typography fontSize={25} fontWeight={700} color="#11142d">
-          BUILD YOUR BODY!
+          HAIL HERO!
         </Typography>
         <Typography fontSize={25} fontWeight={700} color="#11142d">
-          FIND YOUR FUEL!
+          ARE YOU READY?
         </Typography>
         <Typography fontSize={25} fontWeight={700} color="#11142d">
-          BE THE HERO!
+          FITNESS FROM THE GODS!!
         </Typography>
         <Typography fontSize={25} fontWeight={700} color="#11142d">
           REGISTER TO CUSTOMIZE
         </Typography>
         <Typography fontSize={25} fontWeight={700} color="#11142d">
-          YOUR WORKOUTS & MEALPLAN
+          THESE WORKOUTS & MEALPLAN
         </Typography>
         <Box mt={4}>
           <form onSubmit={handleSubmit}>
@@ -74,7 +74,20 @@ const Featured = () => {
               />
             </FormControl>
             <Box textAlign="center" mt={4}>
-              <Button variant="contained" color="primary" type="submit">
+              <Button
+                variant="contained"
+                color="primary"
+                type="submit"
+                sx={{
+                  backgroundColor: "#000",
+                  boxShadow: "0px 2px 5px rgba(0, 0, 0, 0.25)",
+                  color: "#fff",
+                  "&:hover": {
+                    backgroundColor: "#111",
+                    boxShadow: "none",
+                  },
+                }}
+              >
                 Register
               </Button>
             </Box>
