@@ -23,7 +23,7 @@ const Navbar = () => {
   return (
     <Box
       display="flex"
-      position="fixed"
+      position="relative"
       top={0}
       width="100%"
       height={47}
@@ -33,20 +33,17 @@ const Navbar = () => {
     >
 
       <Typography fontSize={25} fontWeight={700} color="white">
-        BUILDABOD
+      <Link to="/" style={{ textDecoration: 'none', color: 'white' }}>MOVIEREEL</Link>
       </Typography>
       <Box display="flex" alignItems="center" ml={-55}>
         <Typography fontSize={18} color="white">
-          WORKOUTS
+        <Link to="/gods" style={{ textDecoration: 'none', color: 'white' }}>MOVIES</Link>
         </Typography>
         <Typography fontSize={18} color="white" ml={3}>
-          MEAL PLAN
+          PLAYLIST
         </Typography>
         <Typography fontSize={18} color="white" ml={3}>
-          ABOUT
-        </Typography>
-        <Typography fontSize={18} color="white" ml={3}>
-          STORE
+          PROFILE
         </Typography>
         <Typography fontSize={18} color="white" ml={3}>
           LOGIN
