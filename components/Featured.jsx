@@ -35,13 +35,13 @@ const Featured = () => {
       alignItems="flex-start"
     >
       <img
-        src="./public/background.jpg"
+        src="/background.jpg"
         style={{ width: "100%", height: "100%", objectFit: "cover" }}
       />
       <Box position="absolute" bottom={500} left={20} right={0} px={2} py={4}>
         {!isPlaying && (
           <img
-            src="./public/cam.png"
+            src="/cam.png"
             alt="Play button"
             style={{ width: 200, height: 200, cursor: "pointer" }}
             onClick={handlePlay}
@@ -56,7 +56,7 @@ const Featured = () => {
             bottom: "-90%",
             transform: "translate(-50%, -50%)",
           }}
-          src="./public/video.mp4"
+          src="/video.mp4"
           width="1200"
           height="520"
           controls
