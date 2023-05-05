@@ -12,7 +12,16 @@ const Movies = () => {
   justifyContent="center"
   alignItems="center"
 >
-  <Box></Box>
+  <Box
+  position="relative"
+  display="flex"
+  direction="row"
+  alignItems="flex-start">
+    <img
+        src="/reel.jpg"
+        style={{ width: "1400px", height: "680px", objectFit: "cover" }}
+      />
+  </Box>
 
 
 </Box>
