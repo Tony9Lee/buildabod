@@ -26,9 +26,10 @@ const Navbar = () => {
   return (
     <Box
       display="flex"
+      alignItems="center"
       position={isHomePage ? "relative" : "absolute"}
       top={0}
-      width="70%"
+      width="66.7%"
       height={47}
       px={40}
       bgcolor="#212121"
@@ -52,7 +53,7 @@ const Navbar = () => {
           }}
         >
           <FaFilm size={18} />
-          <span>MOVIES</span>
+          <span style={{ marginLeft: 5, marginBottom: 5 }}> MOVIES</span>
         </NavLink>
         <NavLink
           to="/playlist"
@@ -66,7 +67,7 @@ const Navbar = () => {
           }}
         >
           <FaList size={18} />
-          <span style={{ marginLeft: 5 }}>PLAYLIST</span>
+          <span style={{ marginLeft: 5, marginTop: 2 }}>PLAYLIST</span>
         </NavLink>
         <NavLink
           to="/profile"
