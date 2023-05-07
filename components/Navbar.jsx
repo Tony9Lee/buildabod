@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate, NavLink } from "react-router-dom";
 import { Box, Typography } from "@mui/material";
-import { NavLink } from "react-router-dom";
 import { FaFilm, FaList, FaUser, FaSignInAlt } from "react-icons/fa";
 
 const Navbar = () => {
