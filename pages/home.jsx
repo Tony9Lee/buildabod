@@ -7,7 +7,7 @@ const Home = () => {
     <Box
       sx={{
         backgroundColor: "#dfc789",
-        minHeight: "100vh",
+        minHeight: "100vh"
       }}
       width="100vw"
       display="flex"
