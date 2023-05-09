@@ -21,12 +21,13 @@ const Navbar = () => {
   }, []);
 
   const isHomePage = location.pathname === "/";
+  const isMoviesPage = location.pathname === "/movies";
 
   return (
     <Box
       display="flex"
       alignItems="center"
-      position={isHomePage ? "relative" : "absolute"}
+      position={isHomePage || isMoviesPage ? "relative" : "absolute"}
       top={0}
       width="66.7%"
       height={47}
@@ -47,9 +48,6 @@ const Navbar = () => {
             color: "white",
             marginRight: 20,
           }}
-          activeStyle={{
-            borderBottom: "2px solid white",
-          }}
         >
           <FaFilm size={18} />
           <span style={{ marginLeft: 5, marginBottom: 5 }}> MOVIES</span>
@@ -60,9 +58,6 @@ const Navbar = () => {
             textDecoration: "none",
             color: "white",
             marginRight: 20,
-          }}
-          activeStyle={{
-            borderBottom: "2px solid white",
           }}
         >
           <FaList size={18} />
@@ -75,9 +70,6 @@ const Navbar = () => {
             color: "white",
             marginRight: 20,
           }}
-          activeStyle={{
-            borderBottom: "2px solid white",
-          }}
         >
           <FaUser size={18} />
           <span style={{ marginLeft: 5 }}>PROFILE</span>
@@ -85,9 +77,6 @@ const Navbar = () => {
         <NavLink
           to="/login"
           style={{ textDecoration: "none", color: "white" }}
-          activeStyle={{
-            borderBottom: "2px solid white",
-          }}
         >
           <FaSignInAlt size={18} />
           <span style={{ marginLeft: 5 }}>LOGIN</span>
